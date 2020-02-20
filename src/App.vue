@@ -1,18 +1,22 @@
 <template>
     <div id="root">
-        hello, Vue
+        <Header></Header>
+        <todo-list></todo-list>
     </div>
 </template>
 
 <script>
+    import Header from "./components/Header.vue"
+    import TodoList from "./components/TodoList.vue";
     export default {
-        name: "App"
+        name: "App",
+        components: {
+            Header,
+            TodoList
+        }
     }
 </script>
 
 <style lang="scss">
-    $color : red;
-    #root {
-        color: $color;
-    }
+
 </style>
